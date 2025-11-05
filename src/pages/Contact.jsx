@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section id="contact" className="contact">
       <h2>Hubungi Saya</h2>
-      <p>Email: <a href="mailto:najuanamin@gmail.com">najuan600@gmail.com</a></p>
+      <p>Email: <a href="mailto:ytaa@gmail.com">ytta@gmail.com</a></p>
 
       <div className="socials">
         <a href="https://github.com/NajuanJRS" target="_blank">GitHub</a>
