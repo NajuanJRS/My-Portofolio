@@ -2,8 +2,6 @@ import './Projects.css'
 
 export default function Projects() {
   const projects = [
-    { name: 'Sistem Informasi Apotek', link: 'https://github.com/rizkySA-PUTRA1996/SIAP-Project.git' },
-    { name: 'Sistem Manajemen Perhotelan', link: 'https://github.com/NajuanJRS/UAS-Struktur-Data.git' },
     { name: 'Proyek Magang', link: 'https://github.com/NajuanJRS/Proyek-Magang' },
   ]
 
