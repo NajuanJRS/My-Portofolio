@@ -1,0 +1,42 @@
+section {
+  width: 100%;
+}
+
+.home {
+  text-align: center;
+  padding: 120px 20px;
+  background-color: #111;
+  color: white;
+  min-height: 100vh;
+  margin-top: 80px;
+}
+
+.home h2 {
+  font-size: 2.5rem;
+}
+
+.highlight {
+  color: #ffcc00;
+}
+
+.home p {
+  color: #ccc;
+  font-size: 1.2rem;
+  margin: 15px 0 30px;
+}
+
+.home button {
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.home button:hover {
+  background-color: #e6b800;
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+}
