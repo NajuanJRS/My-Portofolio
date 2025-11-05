@@ -1,34 +1,39 @@
+/* === NAVBAR UTAMA === */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1000; /* layer utama */
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #222;
   color: white;
-  padding: 0px 70px;
+  padding: 10px 70px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-}
-
-.navbar.scrolled {
-  background-color: #111;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
   transition: all 0.3s ease;
 }
 
+/* Efek saat di-scroll */
+.navbar.scrolled {
+  background-color: #111;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+/* === LOGO === */
 .logo {
   font-size: 20px;
   font-weight: bold;
   color: #ffcc00;
 }
 
+/* === NAV LINK === */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
   margin: 0;
 }
 
@@ -36,8 +41,71 @@
   color: #ffcc00;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
   text-decoration: underline;
+  color: #ffd633;
+}
+
+/* === HAMBURGER === */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  z-index: 2001; /* ✅ ini penting: biar di atas dropdown menu */
+  position: relative; /* supaya z-index berfungsi */
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #ffcc00;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* === MODE MOBILE === */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 25px;
+  }
+
+  /* Sembunyikan link di layar kecil */
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #222;
+    flex-direction: column;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    text-align: center;
+    transition: max-height 0.3s ease-out;
+    z-index: 1000; /* menu di bawah hamburger */
+  }
+
+  .nav-links.active {
+    max-height: 250px;
+    padding: 10px 0;
+  }
+
+  /* Tampilkan tombol hamburger */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Efek animasi hamburger jadi X */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
 }
