@@ -70,7 +70,7 @@
 /* === MODE MOBILE === */
 @media (max-width: 768px) {
   .navbar {
-    padding: 10px 25px;
+    padding: 0px 25px;
   }
 
   /* Sembunyikan link di layar kecil */
