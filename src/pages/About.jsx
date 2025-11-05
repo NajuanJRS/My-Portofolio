@@ -7,7 +7,7 @@ export default function About() {
       <p>
         Saya lahir dan besar di Kalimantan Selatan. Saat ini saya menempuh pendidikan di 
         <b> Politeknik Negeri Banjarmasin</b> jurusan Teknik Informatika. 
-        Saya memiliki ketertarikan pada pengembangan web, desain antarmuka, dan aplikasi mobile.
+        Saya memiliki ketertarikan pada pengembangan web dan desain antarmuka.
       </p>
 
       <h3>Riwayat Pendidikan</h3>
